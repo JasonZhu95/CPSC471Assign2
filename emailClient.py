@@ -73,7 +73,7 @@ recv2 = clientSocket.recv(1024).decode()
 print(recv2)
 
 # Send message data.
-clientSocket.send(("Subject: SMTP EMAIL TEST! \r\n").encode())
+clientSocket.send(("Subject: This is an SMTP Email Client Test \r\n").encode())
 clientSocket.send(("To: throwawaycpsc471@gmail.com \r\n").encode())
 clientSocket.send(msg.encode())
 
